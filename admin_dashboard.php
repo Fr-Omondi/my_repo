@@ -2,7 +2,7 @@
 include('includes/db.php');
 
 // Connect to the database
-// $conn = new mysqli('localhost', 'root', '', 'car_ads');
+ $conn = new mysqli('localhost', 'root', '', 'car_ads');
 
 // Check connection
 if ($conn->connect_error) {
