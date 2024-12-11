@@ -1,4 +1,13 @@
+<?php
+include('includes/db.php');
 
+// Connect to the database
+// $conn = new mysqli('localhost', 'root', '', 'car_ads');
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
 // Handle form submission to add a new car
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['addCar'])) {
